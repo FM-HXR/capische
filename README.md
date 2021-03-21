@@ -117,38 +117,6 @@
 - belongs_to :user
 - has_one :address
 
-# System dependencies
-
-DEPENDENCIES
-active_hash
-aws-sdk-s3
-bootsnap (>= 1.4.4)
-bootstrap-datepicker-rails
-byebug
-capybara (>= 3.26)
-devise
-factory_bot_rails
-faker
-image_processing (~> 1.2)
-jbuilder (~> 2.7)
-listen (~> 3.3)
-mini_magick
-payjp
-pg (~> 1.1)
-pry-rails
-puma (~> 5.0)
-rack-mini-profiler (~> 2.0)
-rails (~> 6.1.3)
-rspec-rails (>= 2.0.0.beta)
-sass-rails (>= 6)
-selenium-webdriver
-spring
-turbolinks (~> 5)
-tzinfo-data
-web-console (>= 4.1.0)
-webdrivers
-webpacker (~> 5.0)
-
 # Ruby Ver
 
 3.0.0
