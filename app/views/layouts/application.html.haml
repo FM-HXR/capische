@@ -1,0 +1,27 @@
+!!!
+%html
+  
+  %head
+    %title Capische
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    %script{:crossorigin => "anonymous", :src => "https://kit.fontawesome.com/0bbc1c0578.js"}
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  
+  %body
+    
+    %header
+      .logo
+        %h2 LOGO
+        %p.title Capische?
+      %i.fab.fa-searchengin
+      .search
+      %h1.placeholder2 This is a Header
+    
+    = yield
+    
+    %footer
+      %h1.placeholder1 This is a Footer
+      %h1.placeholder2 This is a Footer

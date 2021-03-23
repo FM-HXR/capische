@@ -64,5 +64,7 @@ gem 'mini_magick'
 gem 'image_processing', '~> 1.2'
 gem 'bootstrap-datepicker-rails'
 gem 'payjp'
+gem 'font-awesome-rails'
+gem 'haml-rails'
 # Would need to be manually called (required: false)
 gem 'aws-sdk-s3', require: false
