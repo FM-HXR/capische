@@ -1,0 +1,117 @@
+$headerColor: rgba(42, 0, 16, 0.99);
+$footerColor: rgb(58, 0, 22);
+
+@font-face {
+  font-family: "Maimoonde";
+  src: url("Maimoonde.ttf");
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient(
+    180deg,
+    $headerColor 0%,
+    lighten($headerColor, 3%) 10%,
+    lighten($headerColor, 5%) 30%,
+    lighten($headerColor, 5%) 60%,
+    lighten($headerColor, 3%) 80%,
+    $headerColor 100%
+  );
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0,
+    100% 100%,
+    61% 100%,
+    60% 80%,
+    41% 80%,
+    40% 100%,
+    0 100%
+  );
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    grid-row: 2;
+    position: relative;
+  }
+
+  .fa-searchengin {
+    color: white;
+    font-size: 3rem;
+    grid-column: 5;
+    grid-row: 2;
+  }
+
+  .search {
+    width: 40vw;
+    height: 2.5rem;
+    background-color: azure;
+    grid-column: 6;
+    grid-row: 2;
+  }
+
+  p {
+    color: white;
+    font-family: "Maimoonde";
+    font-size: 6rem;
+    text-shadow: 5px 5px 0px #000000, 5px 5px 10px #f700ff;
+  }
+
+  h2 {
+    color: white;
+    padding: 2rem 1.5rem;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+    margin: 1rem 1.5rem 1rem 2rem;
+  }
+}
+
+footer {
+  border-top: 1px solid black;
+  height: 15vh;
+  background-image: linear-gradient(
+    180deg,
+    $footerColor 0%,
+    lighten($footerColor, 3%) 10%,
+    lighten($footerColor, 5%) 30%,
+    lighten($footerColor, 5%) 60%,
+    lighten($footerColor, 3%) 80%,
+    $footerColor 100%
+  );
+}
+
+header,
+footer {
+  z-index: 3;
+  font-size: 1em;
+  width: 100vw;
+  height: 13vh;
+
+  display: grid;
+  grid-template-columns: repeat(11, minmax(max-content, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  filter: blur(0.3px);
+
+  h1 {
+    color: white;
+    border: 0.2rem solid white;
+    padding: 0.5rem 2rem;
+    margin: auto 1.5rem;
+    font-size: 2rem;
+    grid-row: 2;
+  }
+  h1:hover {
+    color: red;
+  }
+
+  h1.placeholder1 {
+    grid-column: 1;
+  }
+
+  h1.placeholder2 {
+    grid-column: 11;
+  }
+}
