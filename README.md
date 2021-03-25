@@ -65,7 +65,7 @@
 - belongs_to :user
 - belongs_to :point
 
-## topic_tag
+## topic_tags
 
 | Column | Type       | Options           |
 | ------ | ---------- | ----------------- |
@@ -76,6 +76,17 @@
 
 - belongs_to :topic
 - belongs_to :tag
+
+## tags
+
+| Column | Type   | Options     |
+| ------ | ------ | ----------- |
+| name   | string | null: false |
+
+### Association
+
+- has_many :topic_tags
+- has_many :topics, through:topic_tags
 
 # Ruby Ver
 
