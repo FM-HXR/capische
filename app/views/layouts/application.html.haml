@@ -15,11 +15,17 @@
     %header
       .logo
         %h2 LOGO
-        %p.title Capische?
+        = link_to "Capische?", root_path, class: "textlogo"
+        -# %p.textlogo Capische?
       %i.fab.fa-searchengin
       .search
-      %h1.placeholder2 This is a Header
-    
+      - unless user_signed_in? 
+        = link_to "Sign In", new_user_session_path, class: "sign in"
+        = link_to "Sign Up", new_user_registration_path, class: "sign up"
+      - else
+        %p.new-topic New Topic
+        = link_to "Sign Out", destroy_user_session_path, method: :delete, class: "sign in"
+        = link_to "#{@user.username}", root_path, class: "sign up"
     = yield
     
     %footer

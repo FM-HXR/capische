@@ -2,6 +2,51 @@
 .main-container
   .side.left
   .index
+    -# %button.filter-1
+    -# %button.filter-2
+    -# %button.filter-3
+    %p.metatitle T o p i c s
+    .divider
+    .topic-1
+      = link_to "#{@titles[0]}", topic_path(@ids[0]), class: "title" 
+    .topic-2
+      = link_to "#{@titles[1]}", root_path, class: "title"
+    .topic-3 
+      = link_to "#{@titles[2]}", root_path, class: "title"
+    .topic-4
+      = link_to "#{@titles[3]}", root_path, class: "title"
+    .topic-5
+      = link_to "#{@titles[4]}", root_path, class: "title"
+    .topic-6 
+      = link_to "Lorem ipsum dolor sit amet, consectetur adipiscing elit", root_path, class: "title"
+    .topic-7
+      = link_to "Lorem ipsum dolor sit amet, consectetur adipiscing elit", root_path, class: "title"
+    .topic-8
+      = link_to "Lorem ipsum dolor sit amet, consectetur adipiscing elit", root_path, class: "title"
+    .topic-9
+      = link_to "Lorem ipsum dolor sit amet, consectetur adipiscing elit", root_path, class: "title"
+    .topic-10
+      = link_to "Lorem ipsum dolor sit amet, consectetur adipiscing elit", root_path, class: "title"
+    .form.topic
+      %i.fas.fa-times-circle
+      = form_with model: @topic, class: "fields", local: true do |f|
+        - if @topic.errors.any?
+          %ul.error-list
+            - @topic.errors.full_messages.each do |message|
+              %li.error-message= message
+        = f.label :title, class: "label"
+        = f.text_area :title, placeholder:"150 Char Max", maxlength: "150", class: "field"
+        = f.label :pro_Position_Name, class: "label"
+        = f.text_field :pro, class: "field"
+        = f.label :con_Position_Name, class: "label"
+        = f.text_field :con, class: "field"
+        = f.label :category, class: "label"
+        = f.collection_select(:category_id, Category.all, :id, :option, {}, {class:"select-box", id:"item-category"})
+        = f.submit "Create", class: "submit"
+
   .side.right
+.loadscreen
+  %p.meter 100%
+  %p.loading Loading...
 %script{:src => "https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"}
 

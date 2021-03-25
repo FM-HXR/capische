@@ -9,6 +9,7 @@ $footerColor: rgb(58, 0, 22);
 header {
   position: fixed;
   top: 0;
+  height: 13vh;
   background-image: linear-gradient(
     180deg,
     $headerColor 0%,
@@ -51,11 +52,42 @@ header {
     grid-row: 2;
   }
 
-  p {
+  a.textlogo {
     color: white;
     font-family: "Maimoonde";
     font-size: 6rem;
     text-shadow: 5px 5px 0px #000000, 5px 5px 10px #f700ff;
+    text-decoration: none;
+  }
+
+  .sign {
+    color: white;
+    border: 0.2rem solid white;
+    padding: 0.5rem 2rem;
+    margin: auto 1.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    grid-row: 2;
+  }
+
+  .in {
+    grid-column: 10;
+  }
+
+  .up {
+    grid-column: 11;
+  }
+
+  .new-topic {
+    color: white;
+    border: 0.2rem solid white;
+    padding: 0.5rem 2rem;
+    margin: auto 1.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    grid-row: 2;
+    grid-column: 9;
+    cursor: pointer;
   }
 
   h2 {
@@ -68,8 +100,10 @@ header {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  height: 10vh;
   border-top: 1px solid black;
-  height: 15vh;
   background-image: linear-gradient(
     180deg,
     $footerColor 0%,
@@ -86,7 +120,6 @@ footer {
   z-index: 3;
   font-size: 1em;
   width: 100vw;
-  height: 13vh;
 
   display: grid;
   grid-template-columns: repeat(11, minmax(max-content, 1fr));

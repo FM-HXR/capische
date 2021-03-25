@@ -1,0 +1,27 @@
+.main-container
+  .side.left
+  .index
+    %p.statement
+      Statement
+    %p.point-statement
+      = @point.title
+    %p.argument
+      Main Argument
+    %p.main-argument
+      = @point.main_point
+    %p.conclusion
+      Conclusions
+    %p.closing
+      = @point.conclusion
+    = image_tag @point.image.variant(resize: "500x500"), class: "point-image" if @point.image.attached?
+    .ratings 
+      %i.fas.fa-lightbulb.bright
+      %p.bright-rate= @point.rating[0]
+      %i.fas.fa-lightbulb.dim
+      %p.dim-rate= @point.rating[1]
+      %i.fas.fa-lightbulb.dark
+      %p.dark-rate= @point.rating[2]
+  .side.right
+
+-# %script{:src => "https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"}
+ 
