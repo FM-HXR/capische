@@ -1,3 +1,128 @@
 // Place all the styles related to the points controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.statement {
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  font-size: 2em;
+  color: white;
+  grid-column: 2 / span 3;
+  grid-row: 3;
+  align-self: end;
+  justify-self: center;
+}
+.point-statement {
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.5em;
+  color: #ffffff;
+  grid-column: 2 / span 3;
+  grid-row: 4 / span 5;
+  justify-self: center;
+  padding-top: 20px;
+}
+
+.argument {
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  font-size: 2em;
+  color: white;
+  grid-column: 2 / span 3;
+  grid-row: 6;
+  align-self: end;
+  justify-self: center;
+  padding-top: 30px;
+}
+
+.main-argument {
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.5em;
+  color: #ffffff;
+  grid-column: 2 / span 3;
+  grid-row: 7 / span 10;
+  justify-self: center;
+  padding-top: 20px;
+}
+
+.conclusion {
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  font-size: 2em;
+  color: white;
+  grid-column: 2 / span 3;
+  grid-row: 11;
+  align-self: end;
+  justify-self: center;
+  padding-top: 30px;
+}
+
+.closing {
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.5em;
+  color: #ffffff;
+  grid-column: 2 / span 3;
+  grid-row: 12 / span 15;
+  justify-self: center;
+  padding-top: 20px;
+}
+
+.point-image {
+  width: fit-content;
+  height: fit-content;
+  grid-column: 2 / span 3;
+  grid-row: 16 / span 17;
+  justify-self: center;
+  padding-top: 20px;
+}
+
+.ratings {
+  width: 120px;
+  height: 65px;
+  // border: 0.1em solid white;
+  grid-column: 2 / span 3;
+  grid-row: 17 / span 18;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, min-content);
+}
+
+.fa-lightbulb {
+  grid-row: 1;
+  padding-bottom: 0.1em;
+  font-size: 4em;
+}
+
+.bright {
+  color: rgba($color: #fffec2, $alpha: 1);
+  grid-column: 1;
+  justify-self: center;
+}
+
+.dim {
+  color: rgba($color: #bdbdbd, $alpha: 1);
+  grid-column: 2;
+  justify-self: center;
+}
+
+.dark {
+  color: rgba($color: #2b2b2b, $alpha: 1);
+  grid-column: 3;
+  justify-self: center;
+}
+
+.bright-rate,
+.dim-rate,
+.dark-rate {
+  color: white;
+  width: fit-content;
+  justify-self: center;
+}

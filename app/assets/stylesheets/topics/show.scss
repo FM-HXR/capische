@@ -1,0 +1,80 @@
+.team {
+  color: white;
+  font-size: 3em;
+  grid-row: 6;
+  margin-top: 0.2em;
+  text-align: center;
+  align-self: end;
+}
+
+.one {
+  grid-column: 2;
+}
+
+.two {
+  grid-column: 4;
+}
+
+.fa-plus-square {
+  font-size: 3em;
+  color: white;
+  grid-row: 7;
+  cursor: pointer;
+}
+
+.new-point-pro {
+  grid-column: 1;
+  justify-self: end;
+}
+
+.new-point-con {
+  grid-column: 5;
+}
+
+.topic-title {
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  font-size: 3em;
+  color: #ffffff;
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 6;
+  justify-self: center;
+  padding-top: 20px;
+}
+
+section {
+  grid-row: 7/18;
+  width: 25vw;
+  height: fit-content;
+  border: 2px solid white;
+  box-shadow: 0px 10px 5px rgba($color: #ffffff, $alpha: 0.8);
+  display: flex;
+  flex-direction: column;
+}
+
+.fors {
+  grid-column: 2;
+}
+
+.againsts {
+  grid-column: 4;
+}
+
+.point {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5em 0;
+  padding: 0 0.2em;
+}
+
+.for {
+  text-shadow: 5px 5px 2px rgba($color: #474747, $alpha: 1);
+}
+
+.against {
+  text-shadow: -5px 5px 2px rgba($color: #474747, $alpha: 1);
+}

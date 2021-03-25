@@ -1,0 +1,17 @@
+.error-list {
+  // grid-column: 2;
+  justify-self: center;
+  height: fit-content;
+  margin-bottom: 2em;
+}
+
+.error-message {
+  font-size: 1.3em;
+  justify-self: center;
+  width: fit-content;
+  height: fit-content;
+  align-self: end;
+  font-weight: bold;
+  list-style: circle;
+  color: rgb(182, 48, 0);
+}

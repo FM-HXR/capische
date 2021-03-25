@@ -1,11 +1,10 @@
 "use strict";
+
+const { formDisableSelector } = require("@rails/ujs");
+
 window.addEventListener("load", function () {
   const sideLeft = document.querySelector(".left");
   const sideRight = document.querySelector(".right");
-
-  sideLeft.addEventListener("click", function () {
-    console.log("click ok");
-  });
 
   for (var i = 0; i <= 10; i++) {
     const hexes = document.createElement("div");
@@ -42,7 +41,7 @@ window.addEventListener("load", function () {
         return anime.random(-100, 99);
       },
       translateY: function () {
-        return anime.random(-500, 500);
+        return anime.random(-900, 900);
       },
       scale: function () {
         return anime.random(0.8, 1.3);

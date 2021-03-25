@@ -9,6 +9,9 @@ import * as ActiveStorage from "@rails/activestorage";
 import "channels";
 require("../anime.min");
 require("../index");
+require("../loader");
+require("../topicForm");
+require("../pointForm");
 
 Rails.start();
 Turbolinks.start();
